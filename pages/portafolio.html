@@ -4,8 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/stylePorta.css">
 </head>
 <body>
+
+    <header>
+        <h1>Portafolio   |   Héctor Rodríguez   |   2019188</h1>
+    </header>
+
+    <main>
+
+        <section id="seccion1">
+            <h2>Quien soy?</h2>
+            <img src="/recursos/Foto.png"  height="300" >
+            <p>Hola, mucho gusto soy Héctor Javier Rodríguez Cabrera y este es mi portafolio personal. Ahora dejenme contarles sobre mi, soy un estudiante de 6to perito en informatica, he estudiado en el centro educativo tecnico laboral KINAL desde 1ro basico y espero continuar mis estudios en la universidad. Tengo ganas de seguir poniendo en practica mis conocimientos y superar nuevos desafios que me ponga la vida. (Los reales los mejores de su seccion profe) </p>
+        </section>
+
+        <section id="seccion2">
+            <h2>Proyectos</h2>
+
+            <ul class="proyectos">
+                <li>
+                    <h1>TonysKinal</h1>
+                    <p>Es un programa hecho para gestionar completamente un restaurante</p>
+                    <a href="/Proyectos/TareaProyectoFinalTonys.zip" download="TareaProyectoFinalTonys.zip" class="boton-descarga">TonysKinal Descarga</a>
+                </li>
+            </ul>
+
+            <ul class="proyectos">
+                <li>
+                    <h2>Ventas</h2>
+                    <p>Es un proyecto enfocado en una tienda en linea</p>
+                    <a href="/Proyectos/Laboratorio2IVtoBIM.zip" download="Laboratorio2IVtoBIM.zip" class="boton-descarga">Ventas Descarga</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="seccion1">
+            <h2>Lenguajes que manejo</h2>
+            <p>Estos son los lenguajes que he utilizado y manejo a nivel básico</p>
+            <ul class="lenguajes-lista">
+                <li>
+                    <h3>JavaScript</h3>
+                    <p>Un lenguaje de programación versátil para desarrollo web.</p>
+                </li>
+                <li>
+                    <h3>Java</h3>
+                    <p>Un lenguaje de programación enfocado a la programacion orientada a objetos.</p>
+                </li>
+                <li>
+                    <h3>HTML/CSS</h3>
+                    <p>Lenguajes fundamentales para la creación de páginas web.</p>
+                </li>
+                <li>
+                    <h3>SQL</h3>
+                    <p>Lenguajes que se usa para la consulta con bases de datos relacionales.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="seccion2">
+            <h2>Multimedia</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0eBM-1iocr0?si=fQgbuMcV-mmZJ5Rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+        </section>
+
+        <section id="seccion1">
+            <h2>Contactame</h2>
+            <p>Utiliza el formulario a continuación para ponerte en contacto conmigo.</p>
+            
+            <form action="javascript:void(0);" onsubmit="enviarFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button id="botonEnviar">Enviar Datos</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Sheeeesh</p>
+    </footer>
+
+    <script>
+        function enviarFormulario() {
+            document.getElementById('botonEnviar').setAttribute('disabled', 'true');
+            document.querySelector('form').classList.add('cargando');
+            window.location.href = 'https://www.youtube.com/embed/rpo_mZXoyig?si=TUhrHR62fGnSWpLF&amp;start=26' ;
+        }
+    </script>
+
     
 </body>
 </html>

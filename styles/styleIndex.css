@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #dde3ca;
+    background-color: rgb(223, 221, 203);
 
     align-items: center;
     justify-content: center;
@@ -20,9 +20,6 @@ header {
 
 
 
-h1 {
-    margin: 0;
-}
 
 nav {
     display: flex;
@@ -51,7 +48,6 @@ main {
 section {
     margin: 30px;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -60,8 +56,7 @@ section {
     
 }
 #fondos1 {
-    background-color: #b2c6dd;
-    border-color: #b2c6dd;
+    background-color: #9c5c5c;
     margin: 20px;
     padding: 15px; 
     text-align: center; 
@@ -71,7 +66,7 @@ section {
 }
 
 #fondos2 {
-    background-color: #ccc;
+    background-color: #491f1f;
     margin: 20px;
     padding: 15px; 
     text-align: center; 
@@ -108,24 +103,61 @@ img:hover {
 }
 
 #seccion1 {
-    background-color: #487aa1;
+    background-color: #810e0e;
     text-align: center;
     padding: 20px; 
 }
 
-
-
-#p1{
-    font-size: 1.5em;
-    color: #000000;
-    margin-bottom: 30px;
+.p1F {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    color: #141414; 
 }
 
-#p2{
-    font-size: 1.5em;
-    color: #000000;
-    margin-bottom: 30px;
+.p2F {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    color: #e2e2e2; 
+}
+
+.bold {
+    font-weight: bold; 
+}
+
+.italic {
+    font-style: italic;
 }
 
 
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    margin-bottom: 15px;
+    position: relative; /* Establecer posición relativa */
+}
 
+h3::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #970000; /* Color de la línea */
+    top: 50%;
+    left: -60px; /* Ajusta la posición de la línea */
+}
+
+h3::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #970000; /* Color de la línea */
+    top: 50%;
+    right: -60px; /* Ajusta la posición de la línea */
+}
