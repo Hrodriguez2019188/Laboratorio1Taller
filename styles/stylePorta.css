@@ -39,6 +39,14 @@ h1 {
     font-size: 24px; 
     margin: 0; 
 }
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    margin-bottom: 15px;
+    position: relative; /* Establecer posición relativa */
+}
 
 main {
     width: 70%;
@@ -46,12 +54,12 @@ main {
 }
 
 #seccion1 {
-    background-color: #fff;
+    background-color: #d44b4b;
     
 }
 
 #seccion2 {
-    background-color: #e0e0e0;
+    background-color: #4e1515;
     text-align: center;
     padding: 20px; 
 }
@@ -86,18 +94,40 @@ section {
     
 }
 
-section h2 {
-    color: #333;
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    margin-bottom: 15px;
+    position: relative; /* Establecer posición relativa */
 }
 
-section p {
-    color: #666;
+h3::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #970000; /* Color de la línea */
+    top: 50%;
+    left: -60px; /* Ajusta la posición de la línea */
 }
+
+h3::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #970000; /* Color de la línea */
+    top: 50%;
+    right: -60px; /* Ajusta la posición de la línea */
+}
+
 
 footer {
     text-align: center;
     margin-top: 20px;
-    background-color: #5bc0de69;
+    background-color: #333;
     color: #fff;
     padding: 10px;
 }
@@ -112,8 +142,9 @@ footer {
 
 .proyectos li {
     margin-bottom: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #797979;
+    border: 1px solid #797979;
+    color: #fff;
     border-radius: 8px;
     padding: 15px;
     overflow: hidden;
@@ -127,18 +158,18 @@ footer {
 
 .proyectos h1 {
     font-size: 1.2em;
-    color: #ffa600;
+    color: #792222;
     margin-bottom: 8px;
 }
 .proyectos h2 {
     font-size: 1.2em;
-    color: #0066ff;
+    color: #b33300;
     margin-bottom: 8px;
 }
 
 .proyectos p {
     font-size: 14px;
-    color: #555;
+    color: #ffffff;
     line-height: 1.4;
     margin: 0;
 }
@@ -154,8 +185,8 @@ footer {
 .lenguajes-lista li {
     width: calc(30% - 20px);
     margin-bottom: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #cfcfcf;
+    border: 1px solid #b3b3b3;
     border-radius: 8px;
     padding: 15px;
     overflow: hidden;
@@ -167,15 +198,16 @@ footer {
     transform: scale(1.05);
 }
 
-.lenguajes-lista h3 {
+.lenguajes-lista h4 {
     font-size: 1.2em;
-    color: #007BFF;
+    color: #991a16;
     margin-bottom: 8px;
 }
 
 .lenguajes-lista p {
+    font-weight: bold;
     font-size: 14px;
-    color: #555;
+    color: #363636;
     line-height: 1.4;
     margin: 0;
 }
@@ -205,7 +237,7 @@ textarea {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #ff2600;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -215,7 +247,27 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #b30000;
 }
 
 
+.p1F {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    color: #141414; 
+}
+
+.p2F {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    color: #e2e2e2; 
+    font-weight: bold;
+}
+
+li {
+    background-color: #6d6d6d; /* Gris claro */
+}
