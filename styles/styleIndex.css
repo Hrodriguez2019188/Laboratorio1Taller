@@ -133,31 +133,3 @@ img:hover {
 }
 
 
-h3 {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    color: #ffffff;
-    text-transform: uppercase; /* Convertir texto a mayúsculas */
-    margin-bottom: 15px;
-    position: relative; /* Establecer posición relativa */
-}
-
-h3::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    background-color: #970000; /* Color de la línea */
-    top: 50%;
-    left: -60px; /* Ajusta la posición de la línea */
-}
-
-h3::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    background-color: #970000; /* Color de la línea */
-    top: 50%;
-    right: -60px; /* Ajusta la posición de la línea */
-}
